@@ -31,7 +31,7 @@ export function openModal(indexOrId) {
     document.getElementById('modalTitle').textContent = p.title;
     document.getElementById('modalDomain').textContent = p.domain;
     document.getElementById('modalStack').innerHTML = p.stack.map(s => `<span class="stack-tag">${s}</span>`).join('');
-    document.getElementById('modalProblem').textContent = p.problem;
+    document.getElementById('modalProblem').innerHTML = p.problem;
     document.getElementById('modalObjective').textContent = p.objective;
     document.getElementById('modalApproach').textContent = p.approach;
     document.getElementById('modalImplementation').textContent = p.implementation;
